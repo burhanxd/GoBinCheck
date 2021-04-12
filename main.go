@@ -33,7 +33,7 @@ func main() {
 	url := ("https://binssuapi.vercel.app/api/"+bin)
 
 	client := http.Client{
-		Timeout: time.Second * 5, // Timeout after 2 seconds
+		Timeout: time.Second * 5, // Timeout after 5 seconds
 	}
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)
